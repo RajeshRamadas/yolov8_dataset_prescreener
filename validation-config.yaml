@@ -1,0 +1,12 @@
+# Dataset Validation CI Configuration
+validation:
+  issue_thresholds:
+    corrupted_images: 0
+    invalid_labels: 10
+    missing_labels: 5
+  notification:
+    email_on_failure: true
+    slack_channel: "#dataset-alerts"
+  artifacts:
+    keep_reports: 10
+    compress_outputs: true
